@@ -1,6 +1,9 @@
 body {
     background-color: coral;
     color: white;
+    font-size: 30px;
+    font-display: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    align-items: center;
+    margin-top: 500px;
+    padding-left: 80px;
 }
