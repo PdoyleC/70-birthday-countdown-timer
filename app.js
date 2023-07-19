@@ -1,7 +1,7 @@
 const timeLeft = document.getElementById('time-left');
 
 //month day year
-const birthday = new Date('10/31/2024');
+const birthday = new Date('09/09/2023');
 
 const second = 1000;
 const minute = second * 60;
@@ -16,13 +16,13 @@ function countDown() {
     console.log(timeSpan);
 
     if (timeSpan <= -day) {
-        timeLeft.innerHTML = 'Hope you had a nice Birthday!!';
+        timeLeft.innerHTML = 'Hope you enjoyed the wedding!!';
         clearInterval(timerId);
         return;
     }
 
     if (timeSpan <= 0) {
-        timeLeft.innerHTML = 'Happy Birthday!!';
+        timeLeft.innerHTML = 'Congratulations!!';
         clearInterval(timerId);
         return;
     }
