@@ -29,7 +29,7 @@ function countDown() {
 
 
     const days = Math.floor(timeSpan / day);
-    const hours = Math.floor((timeSpan % day) / hour);
+    const hours = Math.floor((timeSpan % day) / hour + 14);
     const minutes = Math.floor((timeSpan % hour) / minute);
     const seconds = Math.floor((timeSpan % minute) / second);
 
