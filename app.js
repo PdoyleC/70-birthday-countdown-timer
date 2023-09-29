@@ -2,7 +2,7 @@ const timeLeft = document.getElementById('time-left');
 const sleepLeft = document.getElementById('sleep-left');
 
 //month day year
-const birthday = new Date('09/09/2023');
+const birthday = new Date('10/31/2024');
 
 const second = 1000;
 const minute = second * 60;
@@ -18,7 +18,7 @@ function countDown() {
     console.log(timeSpan);
 
     if (timeSpan <= -day) {
-        timeLeft.innerHTML = 'Hope you enjoyed the wedding!!';
+        timeLeft.innerHTML = 'Happy Birthday!!';
         clearInterval(timerId);
         return;
     }
@@ -32,14 +32,14 @@ function countDown() {
 
     const sleeps = Math.floor(timeSpan / day + 1);
     const days = Math.floor(timeSpan / day);
-    const hours = Math.floor((timeSpan % day) / hour + 14);
+    const hours = Math.floor((timeSpan % day));
     const minutes = Math.floor((timeSpan % hour) / minute);
     const seconds = Math.floor((timeSpan % minute) / second);
 
     sleepLeft.innerHTML =
-        sleeps + 'Sleeps';
+        days + 'days ';
     timeLeft.innerHTML =
-        days + 'days ' + hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
+        hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
 }
 
 timerId = setInterval(countDown, second);
