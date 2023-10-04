@@ -38,8 +38,8 @@ function countDown() {
 
     sleepLeft.innerHTML =
         days + 'days ';
-    timeLeft.innerHTML =
-        hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
+    // timeLeft.innerHTML =
+    //     hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
 }
 
 timerId = setInterval(countDown, second);
