@@ -31,7 +31,7 @@ function countDown() {
 
 
     const sleeps = Math.floor(timeSpan / day + 1);
-    const days = Math.floor(timeSpan / day);
+    const days = Math.floor(timeSpan / day + 1);
     const hours = Math.floor((timeSpan % day));
     const minutes = Math.floor((timeSpan % hour) / minute);
     const seconds = Math.floor((timeSpan % minute) / second);
