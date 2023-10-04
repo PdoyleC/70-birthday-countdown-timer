@@ -37,7 +37,7 @@ function countDown() {
     const seconds = Math.floor((timeSpan % minute) / second);
 
     sleepLeft.innerHTML =
-        days + 'days ';
+        days + ' Days left. ';
     // timeLeft.innerHTML =
     //     hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
 }
